@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CANAR | AROTEC</title>
+    <title>CANAR | CANAR</title>
     <link rel="shortcut icon" href="./img/logos/cnr2.png" type="image/x-icon">
     <script src="./src/js/jquery.js"></script>
     <script src="./src/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./extra/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -18,8 +19,437 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
+
+<style>
+   *{
+    font-family: 'Josefin Sans', sans-serif!important;
+}
+
+h1, h2{
+    font-weight: bolder!important;
+}
+body, html{
+    overflow-x: hidden!important;
+}
+
+.canar{
+    height: 100vh;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+.canar2{
+    height: auto;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+.lang{
+    position: fixed;
+    right: 2rem;
+    top: 0;
+    background: #e82323;
+    color: #ffffff;
+    padding: .1rem .8rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+nav{
+    background: url(../img/img/BG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-xs{
+    font-size: 12px;
+}
+
+footer .container a {
+    margin: .1rem .5rem!important;
+}
+
+.d-flex{
+    display: flex!important;
+}
+
+.justify-between{
+    justify-content: space-between!important;
+}
+.justify-center{
+    justify-content:center!important;
+}
+
+.mt-auto{
+    margin-top: auto;
+}
+
+.barra-nav{
+    background: #e8c423;
+    padding: .3rem .6rem!important;
+    z-index: 1;
+
+}
+
+.barra-nav div a{
+    text-decoration: none;
+    color: white;
+}
+
+.barra-nav div a{
+    background: #dfb913;
+    border: 1px solid #e8c423;
+    padding: .05rem .8rem;
+    border-radius: 5px;
+}
+
+.banner{
+    background: linear-gradient(180deg, #0000003f, #0000005a), url("../img/team-done.jpg");
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    background-position: center center;
+    height: 80vh;
+    display: grid;
+    place-content: center;
+    color: white;
+    background-attachment: fixed;
+}
+
+.banner2{
+    background: linear-gradient(180deg, #0000003f, #0000005a), url("../img/img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+
+.row .col-6{
+    height: 10rem;
+    border: 1px solid rgb(243, 243, 243);
+    display: grid;
+    place-content: center!important;
+}
+
+.col-6 h4, .col-6 h2,.col-6 h1, .col-6 h3{
+    font-weight: 600;
+}
+
+.col-6 span{
+    font-size: 12px;
+}
+
+.col-6 div i {
+    font-size: 2.1em;
+}
+
+.banner3{
+    background: linear-gradient(180deg, #0000004f, #00000075), url("../img/camp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 43vh;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+
+.banner div{
+    background: #00000065;
+    border-radius: 5px;
+}
+
+.banner2 div{
+    background: #00000065;
+    border-radius: 5px;
+}
+
+.banner3 div{
+    background: #00000065;
+    border-radius: 5px;
+}
+
+.video-banner {
+    background: linear-gradient(135deg, #ff00008b, #ff000067, #e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2, #ff00008b,#e8c423c2,#e8c423c2,#e8c423c2,#e8c423c2, #e8c423ae, #ff000049, #ff00008b), url("../img/img/BG.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: bg 10s linear infinite;
+}
+
+.l-b{
+    border-left: 4px solid #dc2b2b;
+    padding-left: 1rem;
+}
+
+.left:hover, .right:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+
+.row .col-4 img{
+    width: 80%!important;
+    border: 2px solid #e8c423;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 3px 2px 8px rgba(255, 0, 0, 0.529);
+}
+
+.row .col-4 img:hover{
+    box-shadow: 3px 2px 8px #ff0000df;
+    transition: .3s;
+    transform: translateY(-3px);
+}
+
+.barra-nav div a div{
+    display: grid;
+    place-content: center!important;
+}
+
+.faqss div{
+    background: #555353c0;
+    padding: .5rem;
+}
+
+.float-right{
+    float: right;
+}
+
+
+
+.st{
+    width: 1.5rem;
+    display: grid;
+    background: grey!important;
+    place-content: center;
+}
+
+
+.text-start{
+    text-align: start!important;
+}
+.flex-wr2{
+    flex-direction: row-reverse!important;
+}
+
+@media (max-width: 700px) {
+    .flex-wr{
+        flex-wrap: wrap;
+        flex-direction: row-reverse !important;
+    }
+    
+.banner{
+    background-size: 100%;
+}
+.canar{
+    height: 95vh;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}   
+.canar2{
+    height: auto;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+    .canar center{
+        padding: 0 calc(1.5rem * 0.5);
+    }
+
+    .canar{
+        width: 100%;
+    }
+}
+
+
+
+.canar{
+    height: 100vh;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}   
+
+@media (min-width: 800px) {
+    
+    .canar center{
+        width: 50%;
+    }
+.row .col-4 img{
+    width: 60%!important;
+    border: 2px solid #e8c423;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 3px 2px 8px rgba(255, 0, 0, 0.529);
+}
+
+.logo-false{
+    display: none!important;
+}
+
+.barra-nav{
+    margin-top: 0;
+}
+
+.video-banner video{
+    width: 70%!important;
+}
+}
+
+.logo-false{
+    display: none;
+}
+
+.bb{
+    width: 3rem;
+    height: .3rem;
+}
+
+.form-control:focus-within{
+    box-shadow: none!important;
+}
+
+.rob{
+    display: grid;
+    place-content: center;
+}
+
+.gall{
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+.gallery {
+    padding: 1rem 1rem ;
+    border-radius: 10px;
+}
+
+.gallery .gall img{
+    width: 50%;
+    border: 1px solid #dfb913;
+    margin: .2rem 1rem;
+    border-radius: 12px;
+}
+
+.left, .right {
+    position: absolute;
+    top: 44%;
+    background: white;
+    border: 2px solid red;
+    border-radius: 60px;
+    height: 2.5rem;
+    width: 2.5rem;
+    box-shadow: 2px 3px 9px grey;
+    color: red;
+    font-size: 20px;
+    display: grid;
+    place-content: center;
+    transition: .3s;
+}
+
+.left{
+    left: -.6rem;
+}
+
+.right{
+    right: -1.5rem;
+}
+
+.bannerr{
+    display: none;
+}
+
+.loader{
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background: white;
+ display: grid;
+ place-content: center;
+}
+
+
+nav {
+    height: 5.5rem;
+}
+
+.events .e-d {
+    background-color: #e8c423;
+    text-align: center;
+    display: none;
+    top: 1.7rem;
+    width: 5rem;
+}
+.events .e-d ul li{
+    list-style-type: none;
+    margin-top: .6rem;
+    margin-left: -1.5rem;
+    width: 4rem;
+    background-color: #dfb913;
+    transition: .3s;
+}
+.events .e-d ul li:hover{
+    background-color: #dc2b2b;
+    transition: .3s
+}
+
+.y, #ans{
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+ 
+    .menu-cont{
+        display: none;
+    }
+    
+    .menu-cont a div{
+        background: #dfb913;
+        transition: .3s;
+    }
+    
+}
+
+.men{
+    display: flex;
+}
+
+
+
+
+.menu-cont a div:hover{
+    background-color: #dc2b2b;
+    transition: .3s
+}
+
+.ativo {
+    background: #dc2b2b!important;
+    transition: .3s
+}
+
+.b_d{
+    
+    background: #dfb913;
+}
+</style>
 <body>
-    <nav class=" position-relative navbar navbar-light  navbar-expand-md">
+    <nav class="w-100 position-relative navbar navbar-light  navbar-expand-md">
         <div class="container">
             <div class="w-100">
                     <img src="img/logos/cnr2.png" alt="" height="50em" class="navbar-brand">
@@ -31,55 +461,17 @@
                     </div>
                 </div>
             </div>
-            <div class="lang">
-                <span>Traduzir</span>
-            </div>
+           
         </div>
         <br>
         
     </nav>
-    <div class="barra-nav" style="z-index: 100000000000!important">
+    <div class="barra-nav w-100 p" style="z-index: 100000000000!important">
         <center class="logo-false mb-2 mt-2"><img src="./img/logos/cnr2.png" height="50em" class="" alt=""></center>
-        <div class="text-end menu my-2 mx-4">
-            <span>
-                <!-- Generated by IcoMoon.io -->
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
-                    <title>menu</title>
-                    <path d="M3.75 4.5h16.5v1.5h-16.5v-1.5z"></path>
-                    <path d="M3.75 11.25h16.5v1.5h-16.5v-1.5z"></path>
-                    <path d="M3.75 18h16.5v1.5h-16.5v-1.5z"></path>
-                    </svg>
-
-            </span>
-        </div>    
+       
         <div  style="z-index: 100000000000!important" class=" container justify-center men gap-4 ">
                 
                 <a href="#" class="ativo">
-                    <div>
-                        Home
-                    </div>
-                </a><a href="#teams">
-                    <div>
-                        Arquivos
-                    </div>
-                </a><a href="results.html">
-                    <div>
-                        Resultados
-                    </div>
-                </a><a class="text-white ans">
-                    <div class="events position-relative">
-                        <span id="ans">CANAR</span>
-                        <div class="e-d position-absolute">
-                            <ul>
-                                <li class="y" id="y2022"> 2022</li>
-                                <li class="y" id="y2021"> 2021</li>
-                            </ul>
-                        </div>
-                    </div>
-            </div> 
-            <div style="display: none;" class=" container justify-center menu-cont gap-4 ">
-                
-                <a href="#" class=" w-75">
                     <div>
                         Home
                     </div>
@@ -91,7 +483,8 @@
                     <div>
                         Resultados
                     </div>
-                </a><a class="text-white">
+                </a>
+                <a class="text-white ans">
                     <div class="events position-relative">
                         <span id="ans">CANAR</span>
                         <div class="e-d position-absolute">
@@ -101,14 +494,14 @@
                             </ul>
                         </div>
                     </div>
-                </a>
+                    </a>
             </div>
        
     </div>
 </div>
     <div class="banner">
         <div class="text-center animate__animated animate__flipInY bannerr p-3">
-            <h1>Benvindo ao </h1>
+            <h1>Bem vindo ao </h1>
             <h1>Campeonato Nacional de Robótica</h1>
             <button class="btn btn-warning">Conheça o evento</button>
         </div>
@@ -121,10 +514,27 @@
             <div class="video position-relative">
                 <div class="vd"></div>
                 
-                <iframe class=" animate__animated animate__bounce" width="560" height="315" src="https://www.youtube.com/embed/2j5tn8O3zXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class=" animate__animated animate__bounce w-100" width="560" height="315" src="https://www.youtube.com/embed/2j5tn8O3zXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <br>
        </div>
+    </div>
+    <div class="canar position-relative py-4" >
+        <center class="mx-auto nossa">
+            <br>
+            <h3 class="text-white" style="font-weight: bolder;">Nossa Visão</h3>
+            <br>
+            <h1 class="text-white">
+                CAPACITAR OS JOVENS DO MUNDO ATRAVÉS DO CTEM
+            </h1>
+            <a href="impact.html"><button style="border: 1px solid white; border-radius: 0; color: white; font-weight: 600" class="btn bt_nossa btn-outline-white">VEJA NOSSO IMPACTO <i class="bi bi-arrow-right-short"></i></button></a>
+        </center>
+        <div class="position-absolute" style="bottom: 0; left: 0; right: 0; display: grid; place-content:center">
+            <img src="./img/eq_banner.png" class="w-75 img_nossa mx-auto" alt="">
+        </div>
+    </div>
+    <div class="text-center b_d py-5">
+        <h1 class="text-white">AJUDE A MOLDAR O MUNDO</h1>
     </div>
     <br>
     <br>
@@ -172,6 +582,7 @@
     </div>
 
     <br>
+   
 
     <div class="container">
         <hr>
@@ -205,23 +616,23 @@
     <div class="main position-relative">
 
         <div class="bg-secondary">
-            <div class="faq container py-4 bg-secondary">
+            <div style="padding: 2rem 1rem;" class="faq container py-4 bg-secondary">
                 <h2 class="text-white">Perguntas sobre o CANAR</h2>
                 <br>
                 <div class="d-flex gap-3 justify-between faqss">
-                    <div class="w-100 text-start">
+                    <div class="w-100 me-2 text-start">
                         <b class="text-white">O que é  CANAR <span class="float-right st">&DownArrow;</span></b>
                     </div>
-                    <div class="w-100 text-start">
+                    <div class="w-100 ms-2 text-start">
                         <b class="text-white">Resultados  <span class="float-right st">&DownArrow;</span></b>
                     </div>
                 </div>
                 <br>
                 <div class="d-flex gap-3 flex-wr justify-between faqss">
-                    <div class="w-100">
+                    <div class="w-100 my-2">
                         <b class="text-white">Quem pode participar  <span class="float-right st">&DownArrow;</span></b>
                     </div>
-                    <div class="w-100">
+                    <div class="w-100 my-2">
                         <b class="text-white">CANAR 2022 <span class="float-right st">&DownArrow;</span></b>
                     </div>
                 </div>
@@ -428,9 +839,12 @@ $("#y2022").click(function(){
     sr.reveal('.row', {delay:200, origin:'bottom'});
     sr.reveal('.org', {delay:200, origin:'bottom'});
     sr.reveal('.main', {delay:200, origin:'bottom'});
+    sr.reveal('.nossa', {delay:200, origin:'bottom'});
     sr.reveal('.gal', {delay:200, origin:'right'});
     sr.reveal('.rb-img', {delay:200, origin:'right'});
+    sr.reveal('.b_d h1', {delay:200, origin:'left'});
     sr.reveal('.other', {delay:200, origin:'left'});
+    sr.reveal('.img_nossa', {delay:200, origin:'bounce'});
 
 
     </script>

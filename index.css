@@ -1,3 +1,27 @@
+*{
+    font-family: 'Josefin Sans', sans-serif!important;
+}
+
+h1, h2{
+    font-weight: bolder!important;
+}
+body, html{
+    overflow-x: hidden!important;
+}
+
+.canar{
+    height: 100vh;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+.canar2{
+    height: auto;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
 .lang{
     position: fixed;
     right: 2rem;
@@ -22,6 +46,9 @@ nav{
     font-size: 12px;
 }
 
+footer .container a {
+    margin: .1rem .5rem!important;
+}
 
 .d-flex{
     display: flex!important;
@@ -40,8 +67,9 @@ nav{
 
 .barra-nav{
     background: #e8c423;
-    padding: .3rem 0;
+    padding: .3rem .6rem!important;
     z-index: 1;
+
 }
 
 .barra-nav div a{
@@ -59,7 +87,7 @@ nav{
 .banner{
     background: linear-gradient(180deg, #0000003f, #0000005a), url("../img/team-done.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover!important;
     background-position: center center;
     height: 80vh;
     display: grid;
@@ -68,7 +96,58 @@ nav{
     background-attachment: fixed;
 }
 
+.banner2{
+    background: linear-gradient(180deg, #0000003f, #0000005a), url("../img/img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+
+.row .col-6{
+    height: 10rem;
+    border: 1px solid rgb(243, 243, 243);
+    display: grid;
+    place-content: center!important;
+}
+
+.col-6 h4, .col-6 h2,.col-6 h1, .col-6 h3{
+    font-weight: 600;
+}
+
+.col-6 span{
+    font-size: 12px;
+}
+
+.col-6 div i {
+    font-size: 2.1em;
+}
+
+.banner3{
+    background: linear-gradient(180deg, #0000004f, #00000075), url("../img/camp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 43vh;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+
 .banner div{
+    background: #00000065;
+    border-radius: 5px;
+}
+
+.banner2 div{
+    background: #00000065;
+    border-radius: 5px;
+}
+
+.banner3 div{
     background: #00000065;
     border-radius: 5px;
 }
@@ -144,9 +223,46 @@ nav{
         flex-wrap: wrap;
         flex-direction: row-reverse !important;
     }
+    
+.banner{
+    background-size: 100%;
 }
+.canar{
+    height: 70vh;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}   
+.canar2{
+    height: auto;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+    .canar center{
+        padding: 0 calc(1.5rem * 0.5);
+    }
+
+    .canar{
+        width: 100%;
+    }
+}
+
+
+
+.canar{
+    height: 70vh;
+    background: linear-gradient(90deg, #d4d001e6, #c6c905da), url(../img/champp.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}   
+
 @media (min-width: 800px) {
     
+    .canar center{
+        width: 50%;
+    }
 .row .col-4 img{
     width: 60%!important;
     border: 2px solid #e8c423;
@@ -199,7 +315,7 @@ nav{
 }
 
 .gallery .gall img{
-    width: 20em!important;
+    width: 50%;
     border: 1px solid #dfb913;
     margin: .2rem 1rem;
     border-radius: 12px;
@@ -247,4 +363,64 @@ nav{
 
 nav {
     height: 5.5rem;
+}
+
+.events .e-d {
+    background-color: #e8c423;
+    text-align: center;
+    display: none;
+    top: 1.7rem;
+    width: 5rem;
+}
+.events .e-d ul li{
+    list-style-type: none;
+    margin-top: .6rem;
+    margin-left: -1.5rem;
+    width: 4rem;
+    background-color: #dfb913;
+    transition: .3s;
+}
+.events .e-d ul li:hover{
+    background-color: #dc2b2b;
+    transition: .3s
+}
+
+.y, #ans{
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+ 
+    .menu-cont{
+        display: none;
+    }
+    
+    .menu-cont a div{
+        background: #dfb913;
+        transition: .3s;
+    }
+    
+}
+
+.men{
+    display: flex;
+}
+
+
+
+
+.menu-cont a div:hover{
+    background-color: #dc2b2b;
+    transition: .3s
+}
+
+.ativo {
+    background: #dc2b2b!important;
+    transition: .3s
+}
+
+.b_d{
+    
+    background: #dfb913;
 }

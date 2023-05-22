@@ -5,9 +5,8 @@
 h1, h2{
     font-weight: bolder!important;
 }
-
-body{
-    overflow-x: hidden;
+body, html{
+    overflow-x: hidden!important;
 }
 
 .lang{
@@ -34,6 +33,9 @@ nav{
     font-size: 12px;
 }
 
+footer .container a {
+    margin: .1rem .5rem!important;
+}
 
 .d-flex{
     display: flex!important;
@@ -52,8 +54,9 @@ nav{
 
 .barra-nav{
     background: #e8c423;
-    padding: .3rem 0;
+    padding: .3rem .6rem!important;
     z-index: 1;
+
 }
 
 .barra-nav div a{
@@ -303,14 +306,9 @@ nav {
 
 
 @media (max-width: 600px) {
-    .men{
-        display: none!important;
-    }
+ 
     .menu-cont{
         display: none;
-    }
-    .menu{
-        display: block!important;
     }
     
     .menu-cont a div{
@@ -324,9 +322,6 @@ nav {
     display: flex;
 }
 
-.menu{
-    display: none;
-}
 
 
 
