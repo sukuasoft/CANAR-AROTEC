@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campeonato Nacional de Robótica | CANAR</title>
-    <link rel="shortcut icon" href="./img/logos/cnr2.png" type="image/x-icon">
-    <script src="./src/js/jquery.js"></script>
-    <script src="./src/js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../img/logos/cnr2.png" type="image/x-icon">
+    <script src="../src/js/jquery.js"></script>
+    <script src="../src/js/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./extra/index.css">
+    <link rel="stylesheet" href="../extra/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
         integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -571,7 +571,7 @@
             <h1 class="text-white">
                 CAPACITAR OS JOVENS DO MUNDO ATRAVÉS DO CTEM
             </h1>
-            <a href="impact.html"><button
+            <a href="../impact.html"><button
                     style="border: 1px solid white; border-radius: 0; color: white; font-weight: 600"
                     class="btn bt_nossa btn-outline-white">VEJA NOSSO IMPACTO <i
                         class="bi bi-arrow-right-short"></i></button></a>
@@ -681,7 +681,7 @@
         <br>
         <div class="d-flex gap-4">
             <a href="http://arotec.ao" class="mt-2"><img src="./img/img/Logo arotec (2).png" height="30em" alt=""></a>
-            <a href="http://arotec.ao" class="my-auto"><img src="./img/img/Logo CNR.png" class="my-auto" height="50em"
+            <a href="http://canar.arotec.ao" class="my-auto"><img src="./img/img/Logo CNR.png" class="my-auto" height="50em"
                     alt=""></a>
         </div>
 
@@ -812,34 +812,15 @@
                 $(".bannerr").fadeIn('slow')
             }, 700);
 
-            var settings = {
-                "async": true,
-                "crossDomain": true,
-                "url": "https://api.alvochat.com/instance1199/messages/chat",
-                "method": "POST",
-                "headers": {},
-                "data": {
-                    "token": "YourToken",
-                    "to": 244946445629,
-                    "body": "WhatsApp API on alvochat.com works good",
-                    "priority": "",
-                    "preview_url": "",
-                    "message_id": ""
-                }
-            }
-
-            $.ajax(settings).done(function (response) {
-                console.log(response);
-                alert(response)
-            });
+           
         })
 
 
         $("#y2022").click(function () {
-            window.location.href = "/2022";
+            window.location.href = "../2022";
         })
         $("#y2021").click(function () {
-            window.location.href = "/2021";
+            window.location.href = "../2021";
         })
 
 
