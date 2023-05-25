@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARQUIVOS | CANAR</title>
-    <link rel="shortcut icon" href="./img/logos/cnr2.png" type="image/x-icon">
-    <script src="./src/js/jquery.js"></script>
-    <script src="./src/js/jquery.min.js"></script>
-    <link rel="stylesheet" href="./extra/index.css">
-    <link rel="stylesheet" href="src/css/bootstrap.css">
-    <script src="src/js/bootstrap.js"></script>
+    <link rel="shortcut icon" href="../img/logos/cnr2.png" type="image/x-icon">
+    <script src="../src/js/jquery.js"></script>
+    <script src="../src/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../extra/index.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.css">
+    <script src="../src/js/bootstrap.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
@@ -20,12 +20,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
 <style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
     .bg-warning-2 {
         background: #eeb8233a;
     }
 
     .form-control:focus-within {
-        border-color: #eeb823!important;
+        border-color: #eeb823 !important;
     }
 </style>
 
@@ -35,7 +37,7 @@
             <div class="w-100">
                 <div class="d-flex w-100 justify-between">
                     <div>
-                        <a href="/"><img src="img/logos/cnr2.png" alt="" height="50em" class="navbar-brand"></a>
+                        <a href="/"><img src="../img/logos/cnr2.png" alt="" height="50em" class="navbar-brand"></a>
                     </div>
                     <div class="mt-auto">
                         <p class="text-xs font-thin"><a href="mailto:arotec.info@gmail.com">arotec.info@gmail.com</a>
@@ -50,7 +52,7 @@
 
     </nav>
     <div class="barra-nav">
-        <center class="logo-false mb-2 mt-2"><img src="./img/logos/cnr2.png" height="50em" class="" alt=""></center>
+        <center class="logo-false mb-2 mt-2"><img src="../img/logos/cnr2.png" height="50em" class="" alt=""></center>
 
         <div class=" container justify-center men gap-3 ">
 
@@ -120,7 +122,7 @@
     <main class="container py-lg-4 py-xxl-5">
         <h1 class="text-warning">Preencha o formulario abaixo</h1>
         <div class="row">
-            <div class="col-12 my-2 my-lg-0 col-lg-6">
+            <div class="col-12 my-2 my-lg-0">
                 <div class="bg-light rounded-4 p-3">
                     <b class="text-secondary">Sobre a Equipa</b>
                     <hr>
@@ -155,18 +157,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 my-2 my-lg-0 col-lg-6">
+            <div class="col-12 my-2 my-lg-0">
                 <div class="bg-light p-3 rounded-4">
                     <b class="text-secondary">Elementos do Grupo</b>
                     <hr>
-                    <div class="row my-3 my-lg-4 rounded-3 bg-warning-2">
-                        <div class="col-12 my-2 my-lg-3 col-sm-6">
-                            <div class="row">
-                                <div class="col-8 col-sm-10">
+                    <div class="row">
+
+                        <div class="col-12 p-2 col-sm-6">
+                            <div class="row rounded-3 rounded-3 bg-warning-2 p-2">
+                                <div class="col-8 col-sm-10 col-lg-12">
                                     <label for="" class="text-secondary">Nome completo</label>
-                                    <input type="text" placeholder="Nome do elemento" class="form-control">
+                                    <input type="text" placeholder="Nome do elemento" class="w-100 form-control">
                                 </div>
-                                <div class="col-4 col-sm-2">
+                                <div class="col-4 col-sm-2 col-lg-12">
                                     <label for="" class="text-secondary">Nasc.</label>
                                     <input type="date" class="form-control" name="" id="">
                                 </div>
@@ -176,15 +179,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row my-3 my-lg-4 rounded-3 bg-warning-2">
-                        <div class="col-12 my-2 my-lg-3 col-sm-6">
-                            <div class="row">
-                                <div class="col-8 col-sm-10">
+                        <div class="col-12 p-2 col-sm-6">
+                            <div class="row rounded-3 rounded-3 bg-warning-2 p-2">
+                                <div class="col-8 col-sm-10 col-lg-12">
                                     <label for="" class="text-secondary">Nome completo</label>
-                                    <input type="text" placeholder="Nome do elemento" class="form-control">
+                                    <input type="text" placeholder="Nome do elemento" class="w-100 form-control">
                                 </div>
-                                <div class="col-4 col-sm-2">
+                                <div class="col-4 col-sm-2 col-lg-12">
                                     <label for="" class="text-secondary">Nasc.</label>
                                     <input type="date" class="form-control" name="" id="">
                                 </div>
@@ -194,15 +195,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row my-3 my-lg-4 rounded-3 bg-warning-2">
-                        <div class="col-12 my-2 my-lg-3 col-sm-6">
-                            <div class="row">
-                                <div class="col-8 col-sm-10">
+                        <div class="col-12 p-2 col-sm-6">
+                            <div class="row rounded-3 rounded-3 bg-warning-2 p-2">
+                                <div class="col-8 col-sm-10 col-lg-12">
                                     <label for="" class="text-secondary">Nome completo</label>
-                                    <input type="text" placeholder="Nome do elemento" class="form-control">
+                                    <input type="text" placeholder="Nome do elemento" class="w-100 form-control">
                                 </div>
-                                <div class="col-4 col-sm-2">
+                                <div class="col-4 col-sm-2 col-lg-12">
                                     <label for="" class="text-secondary">Nasc.</label>
                                     <input type="date" class="form-control" name="" id="">
                                 </div>
@@ -212,15 +211,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row my-3 my-lg-4 rounded-3 bg-warning-2">
-                        <div class="col-12 my-2 my-lg-3 col-sm-6">
-                            <div class="row">
-                                <div class="col-8 col-sm-10">
+                        <div class="col-12 p-2 col-sm-6">
+                            <div class="row rounded-3 rounded-3 bg-warning-2 p-2">
+                                <div class="col-8 col-sm-10 col-lg-12">
                                     <label for="" class="text-secondary">Nome completo</label>
-                                    <input type="text" placeholder="Nome do elemento" class="form-control">
+                                    <input type="text" placeholder="Nome do elemento" class="w-100 form-control">
                                 </div>
-                                <div class="col-4 col-sm-2">
+                                <div class="col-4 col-sm-2 col-lg-12">
                                     <label for="" class="text-secondary">Nasc.</label>
                                     <input type="date" class="form-control" name="" id="">
                                 </div>
@@ -230,87 +227,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row my-3 my-lg-4 rounded-3 bg-warning-2">
-                        <div class="col-12 my-2 my-lg-3 col-sm-6">
-                            <div class="row">
-                                <div class="col-8 col-sm-10">
+                        <div class="col-12 p-2 col-sm-6">
+                            <div class="row rounded-3 rounded-3 bg-warning-2 p-2">
+                                <div class="col-8 col-sm-10 col-lg-12">
                                     <label for="" class="text-secondary">Nome completo</label>
-                                    <input type="text" placeholder="Nome do elemento" class="form-control">
+                                    <input type="text" placeholder="Nome do elemento" class="w-100 form-control">
                                 </div>
-                                <div class="col-4 col-sm-2">
-                                    <label for="" class="text-secondary">Nasc.</label>
-                                    <input type="date" class="form-control" name="" id="">
-                                </div>
-                                <div class="col-12 my-2">
-                                    <label for="" class="text-secondary">Função na Equipa</label>
-                                    <input type="text" placeholder="Sua função na equipa" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-3 my-lg-4 rounded-3 bg-warning-2">
-                        <div class="col-12 my-2 my-lg-3 col-sm-6">
-                            <div class="row">
-                                <div class="col-8 col-sm-10">
-                                    <label for="" class="text-secondary">Nome completo</label>
-                                    <input type="text" placeholder="Nome do elemento" class="form-control">
-                                </div>
-                                <div class="col-4 col-sm-2">
-                                    <label for="" class="text-secondary">Nasc.</label>
-                                    <input type="date" class="form-control" name="" id="">
-                                </div>
-                                <div class="col-12 my-2">
-                                    <label for="" class="text-secondary">Função na Equipa</label>
-                                    <input type="text" placeholder="Sua função na equipa" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-3 my-lg-4 rounded-3 bg-warning-2">
-                        <div class="col-12 my-2 my-lg-3 col-sm-6">
-                            <div class="row">
-                                <div class="col-8 col-sm-10">
-                                    <label for="" class="text-secondary">Nome completo</label>
-                                    <input type="text" placeholder="Nome do elemento" class="form-control">
-                                </div>
-                                <div class="col-4 col-sm-2">
-                                    <label for="" class="text-secondary">Nasc.</label>
-                                    <input type="date" class="form-control" name="" id="">
-                                </div>
-                                <div class="col-12 my-2">
-                                    <label for="" class="text-secondary">Função na Equipa</label>
-                                    <input type="text" placeholder="Sua função na equipa" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-3 my-lg-4 rounded-3 bg-warning-2">
-                        <div class="col-12 my-2 my-lg-3 col-sm-6">
-                            <div class="row">
-                                <div class="col-8 col-sm-10">
-                                    <label for="" class="text-secondary">Nome completo</label>
-                                    <input type="text" placeholder="Nome do elemento" class="form-control">
-                                </div>
-                                <div class="col-4 col-sm-2">
-                                    <label for="" class="text-secondary">Nasc.</label>
-                                    <input type="date" class="form-control" name="" id="">
-                                </div>
-                                <div class="col-12 my-2">
-                                    <label for="" class="text-secondary">Função na Equipa</label>
-                                    <input type="text" placeholder="Sua função na equipa" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-3 my-lg-4 rounded-3 bg-warning-2">
-                        <div class="col-12 my-2 my-lg-3 col-sm-6">
-                            <div class="row">
-                                <div class="col-8 col-sm-10">
-                                    <label for="" class="text-secondary">Nome completo</label>
-                                    <input type="text" placeholder="Nome do elemento" class="form-control">
-                                </div>
-                                <div class="col-4 col-sm-2">
+                                <div class="col-4 col-sm-2 col-lg-12">
                                     <label for="" class="text-secondary">Nasc.</label>
                                     <input type="date" class="form-control" name="" id="">
                                 </div>
@@ -328,7 +251,7 @@
         <br>
         <br>
         <center>
-            <button class="btn btn-warning">Enviar <i class="bi bi-arrow-right-short"></i></button>
+            <button class="btn btn-warning text-white">Enviar aplicação<i class="bi bi-send"></i></button>
         </center>
     </main>
     <br>
@@ -374,7 +297,7 @@
 
     <div class="loader">
         <div>
-            <img src="./img/ld1.gif" height="140em" alt="">
+            <img src="../img/ld1.gif" height="140em" alt="">
         </div>
     </div>
 
