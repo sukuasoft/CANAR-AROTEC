@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Aplicação | CANAR</title>
-    <link rel="shortcut icon" href="../img/logos/cnr2.png" type="image/x-icon">
-    <script src="../src/js/jquery.js"></script>
-    <script src="../src/js/jquery.min.js"></script>
-    <link rel="stylesheet" href="../extra/index.css">
-    <link rel="stylesheet" href="../src/css/bootstrap.css">
-    <script src="../src/js/bootstrap.js"></script>
+    <link rel="shortcut icon" href="../../img/logos/cnr2.png" type="image/x-icon">
+    <script src="../../src/js/jquery.js"></script>
+    <script src="../../src/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../extra/index.css">
+    <link rel="stylesheet" href="../../src/css/bootstrap.css">
+    <script src="../../src/js/bootstrap.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
@@ -40,10 +40,12 @@
             <div class="w-100">
                 <div class="d-flex w-100 justify-between">
                     <div>
-                        <a href="../"><img src="../img/logos/cnr2.png" alt="" height="50em" class="navbar-brand"></a>
+                        <a href="../../"><img src="../../img/logos/cnr2.png" alt="" height="50em"
+                                class="navbar-brand"></a>
                     </div>
                     <div class="mt-auto">
-                            <p class="text-xs my-auto font-thin"><a  class="text-xs font-thin btn btn-danger" href="../sponsor">Patrocine</a>
+                        <p class="text-xs my-auto font-thin"><a class="text-xs font-thin btn btn-danger"
+                                href="./">Patrocine</a>
                         </p>
                     </div>
                 </div>
@@ -55,19 +57,19 @@
 
     </nav>
     <div class="barra-nav">
-        <center class="logo-false mb-2 mt-2"><img src="../img/logos/cnr2.png" height="50em" class="" alt=""></center>
+        <center class="logo-false mb-2 mt-2"><img src="../../img/logos/cnr2.png" height="50em" class="" alt=""></center>
 
         <div class=" container justify-center men gap-3 ">
 
-            <a href="../index.html">
+            <a href="../../index.html">
                 <div>
                     Home
                 </div>
-            </a><a class="" href="../archives.html">
+            </a><a class="" href="../../archives.html">
                 <div>
                     Arquivos
                 </div>
-            </a><a href="../results.html">
+            </a><a href="../../results.html">
                 <div>
                     Resultados
                 </div>
@@ -91,15 +93,15 @@
         </div>
         <div style="display: none;" class=" container justify-center menu-cont gap-4 ">
 
-            <a href="../index.html">
+            <a href="../../index.html">
                 <div>
                     Home
                 </div>
-            </a><a class="ativo" href="../archives.html">
+            </a><a class="ativo" href="../../archives.html">
                 <div>
                     Arquivos
                 </div>
-            </a><a href="../results.html">
+            </a><a href="../../results.html">
                 <div>
                     Resultados
                 </div>
@@ -115,7 +117,7 @@
                 </div>
             </a>
 
-            </a><a href="../sobre/">
+            </a><a href="../../sobre/">
                 <div>
                     CANAR
                 </div>
@@ -135,67 +137,43 @@
     <br>
 
     <main class="container py-lg-4 py-xxl-5">
-        <h1 class="text-warning">Preencha o formulário abaixo</h1>
+        <h1 class="text-warning">Seja um patrocinador / Parceiro</h1>
         <div class="row">
             <div class="col-12 my-2 my-lg-0">
                 <div class="bg-light rounded-4 p-3">
-                    <b class="text-secondary">Sobre a Equipe</b>
+                    <b class="text-secondary">Preencha o formulario abaixo</b>
                     <hr>
                     <div class="row">
                         <div class="col-12 my-3 my-lg-4 col-sm-6 col-lg-6">
-                            <label for="nome-instituicao" class="text-secondary">Nome da Instituição</label>
-                            <input type="text" name="nome-instituicao" id="nome-instituicao"
-                                placeholder="Nome da escola" class="form-control">
+                            <label for="nome-parceiro" class="text-secondary">Nome do parceiro</label>
+                            <input type="text" name="nome-parceiro" id="nome-parceiro"
+                                placeholder="Nome do patrocinador" class="form-control">
                         </div>
                         <div class="col-12 my-3 my-lg-4 col-sm-6 col-lg-6">
-                            <label for="nome-team" class="text-secondary">Nome do Team</label>
-                            <input type="text" name="nome-team" id="nome-team" placeholder="Digite o nome do Team"
+                            <label for="endereco" class="text-secondary">Endereço</label>
+                            <input type="text" name="endereco" id="endereco" placeholder="Digite o endereco"
                                 class="form-control">
                         </div>
                         <div class="col-12 my-3 my-lg-4 col-sm-6 col-lg-6">
                             <label for="email" class="text-secondary">Email</label>
-                            <input type="text" name="email" id="email" placeholder="Email do Team" class="form-control">
-                        </div>
-                        <div class="col-12 my-3 my-lg-4 col-sm-6 col-lg-6">
-                            <label for="email" class="text-secondary">Telefone</label>
-                            <input type="tel" name="telefone" id="telefone" placeholder="Telefone do team"
+                            <input type="text" name="email" id="email" placeholder="Email do patrocinador"
                                 class="form-control">
                         </div>
                         <div class="col-12 my-3 my-lg-4 col-sm-6 col-lg-6">
-                            <label for="num-elementos" class="text-secondary">Quantos elementos tem o team</label>
-                            <br>
-<br>
-                            <select name="num-elementos" id="num-elementos" class="form-control"
-                                onchange="criarCamposElementos(this.value)">
-                                <option value="0">0 Elemento</option>
-                                <option value="1">1 Elemento</option>
-                                <option value="2">2 Elementos</option>
-                                <option value="3">3 Elementos</option>
-                                <option value="4">4 Elementos</option>
-                                <option value="5">5 Elementos</option>
-                                <option value="6">6 Elementos</option>
-                                <option value="7">7 Elementos</option>
-                                
-                            </select>
+                            <label for="email" class="text-secondary">Telefone</label>
+                            <input type="tel" name="telefone" id="telefone" placeholder="Telefone do patrocinador"
+                                class="form-control">
                         </div>
-                        <div class="col-12 my-3 my-lg-4 col-sm-6 col-lg-6">
-                            <label for="email" class="text-secondary">Taxa de inscrição: 150.000 Kz, Pagamento feito em 3 prestações</label>
-                           
+                        <div class="col-12 my-3 my-lg-4 col-sm-12 col-lg-6">
+                            <label for="email" class="text-secondary">Patrocinador...</label>
+
                             <select name="prestacao" id="prestacao" class="form-control">
-                                <option value="1 Prestacao">Pagar em 1 prestação</option>
-                                <option value="2 Prestacao">Pagar em 2 prestações</option>
-                                <option value="3 Prestacao">Pagar em 3 prestações</option>
+                                <option value="Patrocinador Starter">Patrocinador Starter - 150,000.00 Kz</option>
+                                <option value="Patrocinador Bronze">Patrocinador Bronze - 300,000.00 Kz</option>
+                                <option value="Patrocinador Prata">Patrocinador Prata - 500,000.00 Kz</option>
+                                <option value="Patrocinador Gold">Patrocinador Gold - 1,500,000.00 Kz</option>
                             </select>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 my-2 my-lg-0">
-                <div class="bg-light p-3 rounded-4">
-                    <b class="text-secondary">Elementos do Grupo</b>
-                    <hr>
-                    <div class="row" id="elementos-container">
-                        <!-- Campos dos elementos serão adicionados aqui -->
                     </div>
                 </div>
             </div>
@@ -252,7 +230,7 @@
 
     <div class="loader">
         <div>
-            <img src="../img/ld1.gif" height="140em" alt="">
+            <img src="../../img/ld1.gif" height="140em" alt="">
         </div>
     </div>
 
@@ -398,40 +376,27 @@
 
         // Função para enviar o formulário
         function enviarFormulario() {
-            var nomeInstituicao = document.getElementById("nome-instituicao").value;
-            var nomeTeam = document.getElementById("nome-team").value;
+            var nomeInstituicao = document.getElementById("nome-parceiro").value;
+            var endereco = document.getElementById("endereco").value;
             var email = document.getElementById("email").value;
-            var prestacao = document.getElementById("prestacao").value;
+            var plano = document.getElementById("prestacao").value;
             var telefone = document.getElementById("telefone").value;
-            var numElementos = document.getElementById("num-elementos").value;
 
             // Criar objeto com os dados da equipe
             var equipe = {
-                nomeInstituicao: nomeInstituicao,
-                nomeTeam: nomeTeam,
+                patrocinador: nomeInstituicao,
+                endereco: nomeTeam,
                 email: email,
                 telefone: telefone,
-                numElementos: numElementos
+                plano: plano,
             };
 
-            // Adicionar elementos à equipe
-            for (var i = 1; i <= numElementos; i++) {
-                var nomeElemento = document.getElementById("nome-elemento-" + i).value;
-                var nascElemento = document.getElementById("nasc-elemento-" + i).value;
-                var funcaoElemento = document.getElementById("funcao-elemento-" + i).value;
-
-                equipe["elemento-" + i] = {
-                    nome: nomeElemento,
-                    nascimento: nascElemento,
-                    funcao: funcaoElemento
-                };
-            }
-
+       
             // Enviar equipe para o Firestore
             equipeCollection.add(equipe)
                 .then(function (docRef) {
 
-                    alert("Equipe enviada com sucesso, entraremos em contacto em breve ");
+                    alert("Informações enviadas com sucesso, entraremos em contacto em breve ");
                     // setTimeout(()=>{
                     location.reload();
                     //  },6000)
