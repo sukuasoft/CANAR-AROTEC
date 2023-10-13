@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resultados | CANAR</title>
   <link rel="shortcut icon" href="./img/logos/cnr2.png" type="image/x-icon">
-  <script src="./src/js/jquery.js"></script>
-  <script src="./src/js/jquery.min.js"></script>
+  <script src="src/js/jquery.js"></script>
+  <script src="src/js/jquery.min.js"></script>
   <link rel="stylesheet" href="./extra/index.css" />
   <link rel="stylesheet" href="src/css/bootstrap.css" />
   <link rel="stylesheet" href="extra/index.css">
@@ -41,21 +41,48 @@
     }
 
     body {
-      background: url(./img/img/BG.png);
+      background: url(img/img/BG.png);
       background-repeat: no-repeat;
       background-size: cover;
 
     }
   }
 
-  table th {
-    background: rgba(143, 214, 255, 0.5);
-  }
-
   .barra-nav {
     margin-top: 0;
   }
   
+
+  /*Result table*/
+  .results-table{
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px 3px #e8c42331;
+    margin-top: 20px;
+  }
+
+  .results-table table{
+    width: 100%;
+  }
+  .results-table table thead{
+    border-bottom: 2px solid #eee;
+  }
+
+  .results-table table thead td{
+    padding-bottom: 6px;
+    font-weight: bold;
+  }
+
+  .results-table table tbody tr{
+    border-bottom:  1px solid #eee;
+
+  }
+
+  .results-table table tbody td{
+padding: 8px 0px;
+  }
 
 </style>
 
@@ -100,6 +127,7 @@
           <span id="ans">Edição</span>
           <div class="e-d position-absolute">
             <ul>
+              <li class="y" id="y2022"> 2023</li>
               <li class="y" id="y2022"> 2022</li>
               <li class="y" id="y2021"> 2021</li>
             </ul>
@@ -126,52 +154,58 @@
     <div class="title text-center mt-5">
       <h2 class="h2 text-danger titulo">Resultados CANAR 2022</h2>
     </div>
-    <table class="table mt-4">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Equipa</th>
-          <th>Pontuação</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>IPDDF</td>
-          <td>47</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Team Scorpion</td>
-          <td>40</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>KIAR</td>
-          <td>35</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>ÁRVORE DA FELICIDADE </td>
-          <td>30</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>ITEL</td>
-          <td>26</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>IPKK-NV</td>
-          <td>20</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>I2F URBAN</td>
-          <td>15</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="results-table mt-4">
+      <table>
+        <thead>
+          <tr>
+            <td>#</td>
+            <td>Equipa</td>
+            <td>Pontuação</td>
+          </tr>
+        </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>IPDDF</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Team Scorpion</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>KIAR</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>ÁRVORE DA FELICIDADE </td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ITEL</td>
+              <td>26</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>IPKK-NV</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>I2F URBAN</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+     
+        
+      </table>
+    </div>
+    
   </div>
 
 
@@ -179,44 +213,48 @@
     <div class="title text-center mt-5">
       <h2 class="h2 text-danger titulo">Resultados CANAR 2021</h2>
     </div>
-    <table class="table mt-4">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Equipa</th>
-          <th>Pontuação</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>ISUTIC</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>ISTEC</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Arvore da Felicidade</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Kiara</td>
-          <td>17</td>
-        </tr>
-      </tbody>
-    </table>
+
+    <div class="results-table mt-4">
+      <table >
+        <thead>
+          <tr>
+            <td>#</td>
+            <td>Equipa</td>
+            <td>Pontuação</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>ISUTIC</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>ISTEC</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Arvore da Felicidade</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Kiara</td>
+            <td>17</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
   </div>
 
 
   <br><br><br><br><br><br><br><br><br>
   <div class="loader">
     <div>
-      <img src="./img/ld1.gif" height="140em" alt="">
+      <img src="img/ld1.gif" height="140em" alt="">
     </div>
   </div>
 
@@ -289,6 +327,9 @@
 
 
 
+    $("#y2023").click(function () {
+      window.location.href = "/2023";
+    })
 
     $("#y2022").click(function () {
       window.location.href = "/2022";
